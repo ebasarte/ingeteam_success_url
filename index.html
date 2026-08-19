@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link href="https://googleapis.com" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pago realizado correctamente</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Inter, sans-serif;
             background-color: #f4f9f4;
             color: #333;
             margin: 0;
@@ -66,9 +67,9 @@
     </div>
     <script>
       const texts = {
-        'es': { title: 'Pago realizado correctamente', description: '¡Tu transacción se ha completado con éxito!' },
-        'en': { title: 'Payment made correctly', description: 'Your transaction has been completed successfully!' },
-        'fr': { title: 'Paiement effectué correctement', description: 'Votre transaction a été effectuée avec succès!' }
+        'es': { title: 'Pago realizado correctamente', description: 'Tu transacción se ha completado con éxito' },
+        'en': { title: 'Payment made correctly', description: 'Your transaction has been completed successfully' },
+        'fr': { title: 'Paiement effectué correctement', description: 'Votre transaction a été effectuée avec succès' }
       };
       const userLang = navigator.language || navigator.languages[0];
       const langCode = userLang.split('-')[0];
