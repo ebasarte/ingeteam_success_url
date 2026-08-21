@@ -32,6 +32,11 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
         
+        img.svg-img {
+           width: 50px; 
+           height: auto; /* Mantener la proporción de aspecto */
+        }
+        
         .checkmark {
             font-size: clamp(48px, 14vw, 60px);
             line-height: 1;
@@ -56,7 +61,6 @@
             .container {
                 padding: 30px 20px;
             }
-        
             .checkmark {
                 margin-bottom: 15px;
             }
@@ -69,7 +73,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="checkmark">✓</div>
+        <img class="svg-img" src="ok.svg" alt="ok_mark">
         <h1 id="description"></h1>
     </div>
     <script>
