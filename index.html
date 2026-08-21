@@ -15,45 +15,52 @@
             background-color: #ffffff;
             color: #333;
             margin: 0;
-            padding: 20px;
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        
-        img.svg-img {            
-            display: block;
-            width: clamp(50px, 14vw, 80px);
-            height: auto;
-            object-fit: contain;
-            margin: 0 auto 20px;
-        }
-        
-        h1 {
-            margin: 0 0 18px;
-            color: #000000;
-            opacity: 1;
-            font-size: clamp(40px, 8vw, 60px);
+        .container {
+            width: 100%;
             text-align: center;
-            font: normal normal medium 90px/109px Inter;
-            letter-spacing: 0px;
+            padding-top: 221px;
+        }
+
+        .svg-img {
+            display: block;
+            width: 188px;
+            height: 188px;
+            margin: 0 auto;
+        }
+    
+        h1 {
+            width: min(658px, calc(100% - 30px));
+            margin: 77px auto 0;
+            color: #000000;
+            text-align: center;
+            font-family: "Inter", sans-serif;
+            font-size: 90px;
+            font-weight: 500;
+            line-height: 109px;
+            letter-spacing: 0;
         }
         
         /* Ajustes específicos para móviles */
         @media (max-width: 480px) {
-            body {
-                padding: 15px;
+            .container {
+                padding-top: 100px;
             }
-            
-            img.svg-img {
-                width: 50px;
-                height: auto;
-                margin-bottom: 15px;
+        
+            .svg-img {
+                width: 120px;
+                height: 120px;
             }
         
             h1 {
-                margin-bottom: 15px;
+                width: calc(100% - 30px);
+                margin-top: 40px;
+                font-size: clamp(36px, 12vw, 60px);
+                line-height: 1.2;
             }
         }
     </style>
