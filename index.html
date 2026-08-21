@@ -23,14 +23,15 @@
         .container {
             width: 100%;
             text-align: center;
-            padding-top: 221px;
+            padding-top: clamp(50px, 12vh, 150px);
         }
 
-        .svg-img {
+        img.svg-img {
             display: block;
             width: 188px;
             height: 188px;
             margin: 0 auto;
+            object-fit: contain;
         }
     
         h1 {
@@ -41,14 +42,14 @@
             font-family: "Inter", sans-serif;
             font-size: 90px;
             font-weight: 500;
-            line-height: 109px;
+            line-height: 1.2;
             letter-spacing: 0;
         }
         
         /* Ajustes específicos para móviles */
         @media (max-width: 480px) {
             .container {
-                padding-top: 100px;
+                padding-top: 60px;
             }
         
             .svg-img {
